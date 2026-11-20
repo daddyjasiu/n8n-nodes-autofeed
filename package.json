@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-autofeed",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"description": "n8n nodes for the AutoFeed.ai Video API: create faceless videos (AI slideshows, Reddit stories, Would You Rather, AI video and more) and react when they finish.",
 	"license": "MIT",
 	"homepage": "https://www.autofeed.ai/integrations/n8n",
