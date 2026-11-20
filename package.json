@@ -1,0 +1,57 @@
+{
+	"name": "n8n-nodes-autofeed",
+	"version": "0.3.0",
+	"description": "n8n nodes for the AutoFeed.ai Video API: create faceless videos (AI slideshows, Reddit stories, Would You Rather, AI video and more) and react when they finish.",
+	"license": "MIT",
+	"homepage": "https://www.autofeed.ai/integrations/n8n",
+	"keywords": [
+		"n8n-community-node-package",
+		"autofeed",
+		"video",
+		"faceless",
+		"ai video",
+		"shorts",
+		"tiktok"
+	],
+	"author": {
+		"name": "AutoFeed.ai",
+		"email": "hi@autofeed.ai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/daddyjasiu/n8n-nodes-autofeed.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/AutoFeedApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/AutoFeed/AutoFeed.node.js",
+			"dist/nodes/AutoFeedTrigger/AutoFeedTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.54.6",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
